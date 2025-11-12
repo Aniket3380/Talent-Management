@@ -10,6 +10,11 @@ function TalentForm({addTalent})
        setFormData({...formData,[e.target.name]:e.target.value})
     }
 
+      const isValidEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
     const handleSubmit=(e)=>{
       e.preventDefault()
       if(!formData.name.trim() || !formData.email.trim())
@@ -17,6 +22,11 @@ function TalentForm({addTalent})
         alert("name and email required")
         return
       }
+
+      if (!isValidEmail(formData.email.trim())) {
+  alert("Please enter a valid email address.");
+  return;
+}
       const payload={
         name:formData.name.trim(),
         email:formData.email.trim(),
@@ -27,6 +37,8 @@ function TalentForm({addTalent})
       setFormData({name:"",email:"",skills:"",experience:""})
 
     }
+
+  
     return(
 
       <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-8 mt-3">
