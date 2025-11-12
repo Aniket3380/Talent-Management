@@ -14,7 +14,7 @@ function TalentList({talents,loading,error,fetchTalents})
     return(
         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-8 my-8 border border-gray-200">
       <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-        Talent List
+       👥 Talent List
       </h3>
 
       {loading && <div className="text-blue-600 text-center">Loading...</div>}
