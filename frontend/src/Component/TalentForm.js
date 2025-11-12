@@ -29,7 +29,7 @@ function TalentForm({addTalent})
     }
     return(
 
-      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-8 mt-8">
+      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-8 mt-3">
       <h2 className="text-2xl font-bold text-center text-gray-800 mb-2">
         ✨ Add New Talent
       </h2>
