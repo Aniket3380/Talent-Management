@@ -1,6 +1,6 @@
 ⚙️ Installation and Setup for backend
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/talent-backend.git
+git clone https://github.com/Aniket3380/Talent-Management.git
 cd talent-backend
 
 2️⃣ Install Dependencies
@@ -24,9 +24,8 @@ npm run dev
 
 
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/talent-backend.git
+git clone https://github.com/Aniket3380/Talent-Management.git
 cd frontend 
-cd frontend
 
 2️⃣ Install Dependencies
 npm install
