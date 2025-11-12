@@ -39,7 +39,7 @@ export default function Reduser(state=initialState,action)
                         return{
                             ...state,
                             loading:false,
-                            talents:[state.talents,action.payload]
+                            talents:[...state.talents,action.payload]
                         }
                         case "ADD_TALENT_FAILURE":
                             return{

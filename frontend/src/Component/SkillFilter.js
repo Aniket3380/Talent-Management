@@ -16,11 +16,42 @@ function SkillFilter({fetchTalents})
     fetchTalents("")
     }
     return(
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto flex items-center justify-center gap-3 mt-4 mb-6">
-            <input className="flex-1 px-3 py-2 border border-gray-300 rounded-lg  focus:ring-2 focus:ring-indigo-200 outline-none" placeholder="filter by skill" value={skill} onChange={(e)=>setSkill(e.target.value)}/>
-            <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition" type="submit">Filter</button>
-            <button  className="bg-gray-300 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-400 transition"type="button" onClick={handleClear}>Clear</button>
-        </form>
+         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-md p-6 mt-6">
+      {/* Heading */}
+      <h2 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
+        🔍 Filter by Skill
+      </h2>
+
+      {/* Filter form */}
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col md:flex-row items-center gap-3"
+      >
+        <input
+          type="text"
+          placeholder="e.g. React, Node.js, Python"
+          value={skill}
+          onChange={(e) => setSkill(e.target.value)}
+          className="flex-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-300 outline-none"
+        />
+
+        <div className="flex gap-2 w-full md:w-auto justify-end">
+          <button
+            type="submit"
+            className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-5 py-2 rounded-lg font-medium shadow hover:from-indigo-700 hover:to-blue-600 transition w-full md:w-auto"
+          >
+            Apply
+          </button>
+          <button
+            type="button"
+            onClick={handleClear}
+            className="bg-gray-200 text-gray-800 px-5 py-2 rounded-lg font-medium hover:bg-gray-300 transition w-full md:w-auto"
+          >
+            Clear
+          </button>
+        </div>
+      </form>
+    </div>
     )
 }
 
