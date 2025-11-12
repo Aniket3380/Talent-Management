@@ -57,7 +57,6 @@ frontend/
 ```bash
 git clone https://github.com/yourusername/talent-backend.git
 cd frontend 
-cd frontend
 
 2️⃣ Install Dependencies
 npm install
