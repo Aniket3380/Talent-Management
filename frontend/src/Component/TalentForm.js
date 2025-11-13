@@ -34,8 +34,9 @@ function TalentForm({addTalent})
         experience:Number(formData.experience) || 0
       }
       addTalent(payload);
+      alert("sucessfully added Talent")
       setFormData({name:"",email:"",skills:"",experience:""})
-
+      
     }
 
   
